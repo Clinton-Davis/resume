@@ -1,14 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
 
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 html {
     min-height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    min-height: 90vh;
+    background-color: #1e1e1e;
 }
 
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 15vh;
+    min-height: 14vh;
 }
 
 ul {
@@ -18,7 +33,7 @@ ul {
 
 .nav-links {
     display: flex;
-    width: 35%;
+    width: 40%;
     justify-content: space-around;
 }
 
@@ -31,6 +46,40 @@ ul {
 .nav-links li {
     list-style: none;
 }
+
+.nav-links-btm {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-links-btm a {
+    color: rgb(231, 229, 229);
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-links-btm li {
+    list-style: none;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+
+
+.nav-active {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+
+
+
 
 .center-block {
     display: flex;
@@ -67,4 +116,37 @@ ul {
 
 .the-blue {
     background-color: #030dff;
+}
+
+
+/* media  */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 86vh;
+        top: 17vh;
+        background-color: #1e1e1e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block
+    }
 }
