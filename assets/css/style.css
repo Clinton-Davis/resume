@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Audiowide|Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
+
+html {
+    min-height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.nav-links {
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+}
+
+.nav-links a {
+    color: rgb(231, 229, 229);
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.center-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-block-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wht {
+    color: rgb(231, 229, 229);
+}
+
+.aw {
+    font-family: "Audiowide", sans-serif;
+}
+
+.key {
+    color: rgb(223, 222, 222);
+}
+
+.value {
+    color: rgb(179, 179, 179);
+}
+
+.bg-bk {
+    background-color: #1e1e1e;
+}
+
+.the-blue {
+    background-color: #030dff;
+}
