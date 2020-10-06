@@ -73,6 +73,20 @@ ul {
     display: none;
 }
 
+.logo {
+    display: block;
+}
+
+.mobile-logo {
+    background-color: #1e1e1e;
+    position: relative;
+    top: 0px;
+    left: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+
+}
+
 /* media  */
 @media (min-width: 768px) {
     #top-nav {
@@ -80,6 +94,10 @@ ul {
     }
 
     #btm-nav {
+        display: none;
+    }
+
+    .mobile-logo {
         display: none;
     }
 }
@@ -92,8 +110,6 @@ ul {
         width: 100%;
     }
 }
-
-
 
 .center-block {
     display: flex;
@@ -114,6 +130,10 @@ ul {
 
 .aw {
     font-family: "Audiowide", sans-serif;
+}
+
+.exo {
+    font-family: "Roboto", sans-serif;
 }
 
 .key {
