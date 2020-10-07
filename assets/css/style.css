@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Audiowide|Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
 
+/* Genural */
 * {
     margin: 0px;
     padding: 0px;
@@ -15,7 +16,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #1e1e1e;
 }
 
@@ -31,6 +32,48 @@ ul {
     margin-bottom: 0;
 }
 
+.center-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-block-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-wht {
+    color: rgb(231, 229, 229);
+}
+
+.aw {
+    font-family: "Audiowide", sans-serif;
+}
+
+.exo {
+    font-family: "Roboto", sans-serif;
+}
+
+.key {
+    color: rgb(223, 222, 222);
+}
+
+.value {
+    color: rgb(179, 179, 179);
+}
+
+.bg-bk {
+    background-color: #1e1e1e;
+}
+
+.the-blue {
+    background-color: #030dff;
+}
+
+/* Nav Bar */
 .nav-a {
     color: rgb(231, 229, 229);
     text-decoration: none;
@@ -84,10 +127,31 @@ ul {
     left: 0;
     padding-top: 10px;
     padding-left: 10px;
-
 }
 
-/* media  */
+/* Home */
+.home {
+    height: 70vh;
+    color: rgb(223, 222, 222);
+}
+
+.shadow-container {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: -10px -10px 10px rgba(114, 114, 114, 0.2),
+        10px 10px 10px rgb(0, 0, 0, 0.1);
+}
+
+/* About */
+#about {
+    height: fit-content;
+}
+
+/* Nav Bar media  */
 @media (min-width: 768px) {
     #top-nav {
         display: flex;
@@ -109,45 +173,4 @@ ul {
         bottom: 2vh;
         width: 100%;
     }
-}
-
-.center-block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.center-block-col {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-wht {
-    color: rgb(231, 229, 229);
-}
-
-.aw {
-    font-family: "Audiowide", sans-serif;
-}
-
-.exo {
-    font-family: "Roboto", sans-serif;
-}
-
-.key {
-    color: rgb(223, 222, 222);
-}
-
-.value {
-    color: rgb(179, 179, 179);
-}
-
-.bg-bk {
-    background-color: #1e1e1e;
-}
-
-.the-blue {
-    background-color: #030dff;
 }
