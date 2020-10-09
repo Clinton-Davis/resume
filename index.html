@@ -16,7 +16,7 @@
     <div class="logo-bg logo-mobile"></div>
     <h1 class="logo-name logo-mobile">Clinton <span class="logo-last">Davis</span></h1>
 
-    <nav id="top-nav" class="bg-bk">
+    <nav id="top-nav" class="bg-tr">
         <div class="logo-bg"></div>
         <h1 class="logo-name">Clinton <span class="logo-last">Davis</span></h1>
         <ul class="nav-links">
@@ -28,7 +28,7 @@
     </nav>
 
 
-    <section id="home">
+    <section id="home" class="bg-lgy">
         <div class="container center-block-col home aw">
             <div class="home-container text-center p-3">
                 <h1>Hello!</h1>
@@ -41,32 +41,40 @@
         </div>
     </section>
     <section id="projects">
-        <h2 class="text-center aw text-wht pro-heading">Projects</h2>
-        <div class="products-container mx" style="height: 100vh;">
-            <div class="card">
+        <h2 class="text-center aw pro-heading">Projects</h2>
+        <div class="products-container mx">
+            <div class="card mx">
                 <div class="imgbx">
-                    <img src="design.png">
-                    <h3>Design</h3>
+                    <img src="./assets/images/focus-screen.png">
                 </div>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card mx">
                 <div class="imgbx">
-                    <img src="code.png">
-                    <h3>Code</h3>
+                    <img src="./assets/images/chowscreen.png">
                 </div>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card mx">
                 <div class="imgbx">
-                    <img src="launch.png">
-                    <h3>Launch</h3>
+                    <img src="./assets/images/balletweb.png">
+
+                </div>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+            <div class="card mx">
+                <div class="imgbx">
+                    <img src="./assets/images/bestbits.png">
+
                 </div>
                 <div class="content">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -77,8 +85,19 @@
         </div>
 
     </section>
-    <section id="contact">
-
+    <section id="contact" class="contact-image">
+        <div class="contact-container center-block-col">
+            <h2 class="aw text-center contact-heading">Contact</h2>
+            <form class="aw">
+                <label for="name">Your name:</label><br>
+                <input class="form-control" type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input class="form-control" type="text" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+                <button class="button aw" type="submit">Send Message</button>
+            </form>
+        </div>
     </section>
 
     <footer id="btm-nav" class="bg-bk">
