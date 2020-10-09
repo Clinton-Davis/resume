@@ -20,6 +20,7 @@ body {
 
 :root {
     --aw: "Audiowide", sans-serif;
+    --rbo: "Roboto", sans-serif;
     --bg-b: rgb(30, 30, 30);
     --bg-lgy: rgb(211, 211, 211);
     --txt-wht: rgb(231, 229, 229);
@@ -38,6 +39,13 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
+
+table {
+
+    border-collapse: collapse;
+    min-width: 300px;
+}
+
 
 .form-control {
     height: 30px;
@@ -74,12 +82,8 @@ ul {
     font-family: var(--aw);
 }
 
-.key {
-    color: var(--key);
-}
-
-.value {
-    color: var(--value);
+.rbo {
+    font-family: var(--rbo);
 }
 
 .bg-bk {
@@ -199,6 +203,10 @@ ul {
     background-size: cover;
 }
 
+.hero span {
+    font-size: 5rem;
+}
+
 .shadow-container {
     background-color: var(--bg-b);
     border-radius: 15px;
@@ -213,6 +221,43 @@ ul {
 /* About */
 #about {
     height: fit-content;
+}
+
+.info-block {
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.key {
+    /* display: inline-block; */
+    color: var(--key);
+
+
+}
+
+.value {
+    /* display: inline-block; */
+    color: var(--value);
+
+
+}
+
+.why-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.card-w {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background: var(--txt-wht);
 }
 
 @media (max-width: 400px) {
@@ -375,7 +420,8 @@ ul {
 }
 
 .info {
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
 }
 
 .image-block {
