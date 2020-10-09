@@ -207,6 +207,19 @@ table {
     font-size: 5rem;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks {
+    justify-content: space-around;
+}
+
 .shadow-container {
     background-color: var(--bg-b);
     border-radius: 15px;
