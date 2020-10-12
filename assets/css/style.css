@@ -13,15 +13,13 @@ html {
 
 body {
     overflow-x: hidden;
-    background-image: url(../images/chuttersnap-9AqIdzEc9pY-unsplash.jpg);
+    background-image: url(../images/bigback.png);
     background-size: cover;
-
 }
 
 :root {
     --aw: "Audiowide", sans-serif;
     --rbo: "Roboto", sans-serif;
-
     --bg-b: rgb(30, 30, 30);
     --bg-lgy: rgb(211, 211, 211);
     --txt-wht: rgb(231, 229, 229);
@@ -96,6 +94,22 @@ a {
 
 .pb-4 {
     padding-bottom: 2rem;
+}
+
+.mb-1 {
+    margin-bottom: 0.5rem;
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-4 {
+    margin-bottom: 2rem;
 }
 
 .center-block-col {
@@ -332,22 +346,26 @@ a {
     align-items: center;
     max-width: 600px;
     border-radius: 20px;
-    /* background: var(--txt-wht); */
+    background: var(--txt-wht);
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
 
-/* Products */
+/* Projects */
 #projects {
     height: fit-content;
+}
+
+.project-info {
+    text-align: left;
 }
 
 .pro-heading {
     margin-bottom: 40px;
     text-shadow: -2px -1px var(--blue);
-    color: var(--pd5);
+    color: var(--pd1);
     font-size: 5rem;
     transform: skewY(0deg);
     -webkit-transform: skewY(0deg);
@@ -407,7 +425,7 @@ a {
     left: -15px;
     width: 15px;
     height: 50%;
-    background: var(--blue_5);
+    background: var(--pd1);
     border-bottom: 200px solid var(--pd4_5);
     transform-origin: left;
     transform: skewY(45deg);
@@ -440,9 +458,9 @@ a {
     width: 100%;
     height: 200px;
     padding: 20px;
-    background: var(--pd3);
+    background: var(--pd5);
     color: rgb(19, 19, 19);
-    text-align: center;
+    /* text-align: center; */
 }
 
 .products-container .card .content:before {
