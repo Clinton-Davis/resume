@@ -8,7 +8,7 @@
     <meta name="Description" content="Enter your description here" />
     <script src="https://kit.fontawesome.com/092992acac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Resume</title>
+    <title>Clinton Davis</title>
 </head>
 
 <body>
@@ -21,9 +21,9 @@
         <h1 class="logo-name">Clinton <span class="logo-last">Davis</span></h1>
         <ul class="nav-links">
             <li hidden><a class="aw" href="#">Home</a></li>
-            <li><a class="aw" href="#">Projects</a></li>
+            <li><a class="aw" href="#projects">Projects</a></li>
             <li><a class="aw" href="#">About</a></li>
-            <li><a class="aw" href="#">Contact</a></li>
+            <li><a class="aw" href="#contact">Contact</a></li>
         </ul>
     </nav>
 
@@ -31,7 +31,7 @@
     <section id="home" class="">
         <div class="container home aw">
             <div class="home-container flex-col text-center p-3">
-                <h2 class="hero">
+                <h2 class="hero txtshd-b">
                     <span>H</span>
                     <span>e</span>
                     <span>l</span>
@@ -39,36 +39,18 @@
                     <span>o</span>
                     <span>!</span>
                 </h2>
-                <h4>Im Clinton Davis, and I'm a <br>
-                    Full Stack Web Developer</h4>
+                <h2 class="text-dblue">Im Clinton Davis, and I'm a <br>
+                    Full Stack Web Developer. </h2>
                 <br>
             </div>
             <div class="blocks flex">
                 <div class="">
-                    <div class="card-w">
-                        <h4 class="aw">WHAT DO I DO?</h4>
-                        <p class="rbo">I'm a skilled Full Stack Developer with a wealth of diverse life and technical
-                            experience
-                            that I bring to every project.</p>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="card-w">
-                        <h4 class="aw">HOW DO I DO IT?</h4>
-                        <p class="rbo">I follow form as well as function. I know that the aesthetics of effective design
-                            combined
-                            with application speed, security and reliability combine to create a great user experience.
-                        </p>
-                    </div>
-                </div>
-                <div class="">
-                    <div class="card-w">
-                        <h4 class="aw">WHY HIRE ME?</h4>
-                        <p class="rbo">I work quickly and effectively in getting things built and working across the
-                            stack.
-                            I'm an
-                            excellent communicator who thrives in bright and enthusiastic teams and I'm also a
-                            self-starter when working solo.</p>
+                    <div class="card-w hero-p box shadow5">
+                        <p class="rbo text-center">I have a diverse life and technical experience, I follow form as well as function. 
+                            The effective design combined with application speed, security and reliability to create a great user experience.
+                            I work quickly and effectively in getting things built and working across the Full Stack. I'm an excellent communicator who thrives in bright and 
+                            enthusiastic teams and I'm also a self-starter when working solo.
+                            </p>
                     </div>
                 </div>
             </div>
@@ -79,43 +61,61 @@
     <section id="projects">
         <h2 class="text-center aw pro-heading">Projects</h2>
         <div class="products-container mx">
+            
             <div class="card mx">
                 <div class="imgbx">
                     <img src="./assets/images/focus-screen.png">
                 </div>
+                <a href="https://focus-fitness.herokuapp.com/" target="_black">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="aw">Focus Fitness</h4>
+                    <p class="rbo">Project | Code Institute.<br>
+                    A fictional, Subscription based fitness website with a full e-commerce shop and user blog.<br><br>
+                    </p>
+                    <span class="rbo-4">2020 | Python | Django</span>
                 </div>
+                </a>
             </div>
+        
             <div class="card mx">
                 <div class="imgbx">
                     <img src="./assets/images/chowscreen.png">
                 </div>
+                <a href="https://chow-flask-mongodb.herokuapp.com/" target="_black">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="aw">Chow</h4>
+                    <p class="rbo">Project | Code Institute.<br>
+                    A fictional, Online cookbook, promoting a brand.
+                <br><br>
+            </p><span class="rbo-4">2019 | Python | Flask</span>
                 </div>
+                </a>
             </div>
             <div class="card mx">
                 <div class="imgbx">
-                    <img src="./assets/images/balletweb.png">
-
+                    <img src="./assets/images/pb-1029x728.png">
                 </div>
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="https://www.southpeninsulaballet.com/" target="_black">
+                <div class="content bp-2">
+                    <h4 class="aw">Peninsula Ballet</h4>
+                    <p class="rbo">Project | Peninsula Ballet <br>Peninsula Ballet is a ballet studio webpage. This webpage is live and mantained.
+                        <br><br>
+                    </p><span class="rbo-4"> 2019 | JavaScript</span>
                 </div>
+                </a>
             </div>
             <div class="card mx">
                 <div class="imgbx">
                     <img src="./assets/images/bestbits.png">
-
                 </div>
+                <a href="">
                 <div class="content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h4 class="aw">Cape Towns Best Bits</h4>
+                    <p class="rbo">Project | Code Institute<br>
+                    A Cape Town do it your self tourism webpage with Google Maps API intergration with live weather updates.<br><br>
+                </p><span class="rbo-4">2019 | JavaScript | JQuery</span>
                 </div>
+                </a>
             </div>
 
         </div>
@@ -141,10 +141,11 @@
             </div>
         </div>
     </section> -->
-    <section id="contact" class="contact-image">
-        <div class="contact-container center-block-col">
+    <section id="contact" class="">
+        <div class="contact-container center-block-col ">
             <h2 class="aw text-center contact-heading">Contact</h2>
-            <form class="aw">
+            <h4 class="aw text-center  pb-2">If you would like to contact me <br>please feel free to send me a message.</h4>
+            <form class="aw pb-4 ">
                 <label for="name">Your name:</label><br>
                 <input class="form-control" type="text" id="name" name="name"><br>
                 <label for="email">Email:</label><br>
@@ -154,12 +155,20 @@
                 <button class="button aw" type="submit">Send Message</button>
             </form>
         </div>
+        <div class="center-block">
+            <span class="icons"><a href="https://www.linkedin.com/in/clinton-davis-26104a14b/" target="_black"><i class="fab fa-linkedin fa-2x"></i></a></span>
+            <span class="icons"><a href="https://twitter.com/ClintonGADavis"></a><i class="fab fa-twitter-square fa-2x"></i></a></span>
+            <span class="icons"><a href="https://github.com/Clinton-Davis"></a><i class="fab fa-github-square fa-2x"></i></a></span>
+        </div>
     </section>
-
     <footer id="btm-nav" class="bg-bk">
         <div class="nav-links-btm">
-            <div hidden><a class="aw" href="#">Home</a></div>
-            <a class="aw" href="#">
+            <a class="aw" href="#projects">
+                <div class="center-block-col">
+                    <i class="far fa-home fa-lg mb-2"></i>Home
+                </div>
+            </a>
+            <a class="aw" href="#projects">
                 <div class="center-block-col">
                     <i class="fas fa-desktop fa-lg mb-2"></i>Projects
                 </div>
@@ -169,7 +178,7 @@
                     <i class="far fa-user fa-lg mb-2"></i>About
                 </div>
             </a>
-            <a class="aw" href="#">
+            <a class="aw" href="#contact">
                 <div class="center-block-col">
                     <i class="far fa-address-card fa-lg mb-2"></i>Contact
                 </div>
