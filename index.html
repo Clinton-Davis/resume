@@ -12,32 +12,31 @@
 </head>
 
 <body>
-
+<!-- Moble Logo  -->
     <div class="logo-bg logo-mobile"></div>
     <h1 class="logo-name logo-mobile">Clinton <span class="logo-last">Davis</span></h1>
-
+<!-- Nav Bar Top fullscreen -->
     <nav id="top-nav" class="bg-tr">
         <div class="logo-bg"></div>
         <h1 class="logo-name">Clinton <span class="logo-last">Davis</span></h1>
         <ul class="nav-links">
             <li hidden><a class="aw" href="#">Home</a></li>
             <li><a class="aw" href="#projects">Projects</a></li>
-            <li><a class="aw" href="#">About</a></li>
+            <li><a id="about-modal-link" class="aw">About</a></li>
             <li><a class="aw" href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-
+<!-- Home section  -->
     <section id="home" class="">
         <div class="container home aw">
             <div class="home-container flex-col text-center p-3">
-                <h2 class="hero txtshd-b">
-                    <span>H</span>
-                    <span>e</span>
-                    <span>l</span>
-                    <span>l</span>
-                    <span>o</span>
-                    <span>!</span>
+                <h2 class="hero txt-shadow">
+                    <span class="big animate">H</span>
+                    <span class="big animate">e</span>
+                    <span class="big animate">l</span>
+                    <span class="big animate">l</span>
+                    <span class="big animate">o</span>
+                    <span class="big animate">!</span>
                 </h2>
                 <h2 class="text-dblue">Im Clinton Davis, and I'm a <br>
                     Full Stack Web Developer. </h2>
@@ -55,11 +54,20 @@
                 </div>
             </div>
         </div>
-
-
     </section>
+<!-- Modal  -->
+    <div id="aboutModel" class="modal">
+        <!-- Modal contect -->
+        <div class="modal-content">
+            <span class="close"> &times;</span>
+            <h2 class="aw text-center">About Clint</h2>
+            <p> Will fill this out in a bit</p>
+        </div>
+    </div>
+    <!-- modal end  -->
+    <!-- Projects section  -->
     <section id="projects">
-        <h2 class="text-center aw pro-heading">Projects</h2>
+        <h2 class="text-center aw txt-shadow pro-heading">Projects</h2>
         <div class="products-container mx">
             
             <div class="card mx">
@@ -67,28 +75,29 @@
                     <img src="./assets/images/focus-screen.png">
                 </div>
                 <a href="https://focus-fitness.herokuapp.com/" target="_black">
-                <div class="content project-info">
-                    <h4 class="aw mb-2">Focus Fitness</h4>
-                    <p class="rbo"><span class="rbo-4">Project |</span> Code Institute.<br>
-                    A fictional, Subscription based fitness website with a full e-commerce shop and user blog.<br><br>
-                    </p>
-                    <span class="rbo-4">2020 | Python | Django</span>
-                </div>
+                    <div class="info-container info-border ">
+                        <div class="content ">
+                            <h4 class="aw mb-2 info-item1">Focus Fitness</h4>
+                            <p class="rbo-4 mb-2 info-item2">2020 | Python | Django</p>
+                            <p class="rbo info-item3"><span class="rbo-4">Project |</span> Code Institute.<br>
+                            A fictional, Subscription based fitness website with a full e-commerce shop and user blog.<br><br></p>
+                        </div>
+                    </div>
                 </a>
             </div>
-        
             <div class="card mx">
                 <div class="imgbx">
                     <img src="./assets/images/chowscreen.png">
                 </div>
                 <a href="https://chow-flask-mongodb.herokuapp.com/" target="_black">
-                <div class="content">
-                    <h4 class="aw mb-2">Chow</h4>
-                    <p class="rbo"><span class="rbo-4">Project |</span>| Code Institute.<br>
-                    A fictional, Online cookbook, promoting a brand.
-                <br><br>
-            </p><span class="rbo-4">2019 | Python | Flask</span>
-                </div>
+                    <div class="info-container info-border ">
+                        <div class="content ">
+                            <h4 class="aw mb-2 info-item1">Chow</h4>
+                            <p class="rbo-4 mb-2 info-item2">2019 | Python | Flask</p>
+                            <p class="rbo info-item3"><span class="rbo-4 ">Project |</span>| Code Institute.<br>
+                                    A fictional, Online cookbook, promoting a brand.<br><br></p>
+                        </div>
+                    </div>
                 </a>
             </div>
             <div class="card mx">
@@ -96,54 +105,37 @@
                     <img src="./assets/images/pb-1029x728.png">
                 </div>
                 <a href="https://www.southpeninsulaballet.com/" target="_black">
+                    <div class="info-container info-border ">
                 <div class="content bp-2">
-                    <h4 class="aw mb-2">Peninsula Ballet</h4>
-                    <p class="rbo"><span class="rbo-4">Project |</span>  Peninsula Ballet <br>Peninsula Ballet is a ballet studio webpage. This webpage is live and mantained.
-                        <br><br>
-                    </p><span class="rbo-4"> 2019 | JavaScript</span>
+                    <h4 class="aw mb-2 info-item1">Peninsula Ballet</h4>
+                    <p class="rbo-4 mb-2 info-item2"> 2019 | JavaScript</p>
+                    <p class="rbo info-item3"><span class="rbo-4">Project |</span>  Peninsula Ballet <br>Peninsula Ballet is a ballet studio webpage. 
+                        This webpage is live and mantained.<br><br></p>
                 </div>
+                    </div>
                 </a>
             </div>
             <div class="card mx">
                 <div class="imgbx">
                     <img src="./assets/images/bestbits.png">
                 </div>
-                <a href="">
-                <div class="content">
-                    <h4 class="aw mb-2">Cape Towns Best Bits</h4>
-                    <p class="rbo mb-1"><span class="rbo-4">Project |</span> Code Institute<br></p>
-                    <p class="rbo">A Cape Town do it your self tourism webpage with Google Maps API and weather intergration.<br><br>
-                </p><span class="rbo-4">2019 | JavaScript | JQuery</span>
-                </div>
+                <a href="https://musing-tesla-381a66.netlify.app/">
+                    <div class="info-container info-border ">
+                        <div class="content">
+                            <h4 class="aw mb-2 info-item1">Cape Towns Best Bits</h4>
+                            <p class="rbo-4 mb-2 info-item2">2019 | JavaScript | JQuery</p>
+                            <p class="rbo info-item3"><span class="rbo-4">Project |</span> Code Institute<br></p>
+                            <p class="rbo">A Cape Town do it your self tourism webpage with Google Maps API and weather intergration.<br><br></p>
+                        </div>
+                    </div>
                 </a>
             </div>
-
         </div>
-
     </section>
-    <!-- <section id="about">
-        <h2 class="aw text-center about-heading">About Me</h2>
-        <div class="about-container center-block" style="height: 100vh;">
-            <div class="image-block info">
-                <img src="./assets/images/me.jpg" style="width: 5rem" alt="">
-            </div>
-            <div class="info-block info">
-                <h3 class="text-center">Personal Details</h3>
-                <table>
-                    <tr>
-                        <td>Name:</td>
-                        <td>Maria Anders</td>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                        <td>Alfreds Futterkiste</td>
-                        <td>Maria Anders</td>
-                </table>
-            </div>
-        </div>
-    </section> -->
+<!-- Contact section -->
     <section id="contact" class="">
         <div class="contact-container center-block-col ">
-            <h2 class="aw text-center contact-heading">Contact</h2>
+            <h2 class="aw text-center txt-shadow contact-heading">Contact</h2>
             <h4 class="aw text-center  pb-2">If you would like to contact me <br>please feel free to send me a message.</h4>
             <form class="aw pb-4 ">
                 <label for="name">Your name:</label><br>
@@ -161,6 +153,7 @@
             <span class="icons"><a href="https://github.com/Clinton-Davis"></a><i class="fab fa-github-square fa-2x"></i></a></span>
         </div>
     </section>
+    <!-- mobile Nav bar -->
     <footer id="btm-nav" class="bg-bk">
         <div class="nav-links-btm">
             <a class="aw" href="#projects">
@@ -173,7 +166,7 @@
                     <i class="fas fa-desktop fa-lg mb-2"></i>Projects
                 </div>
             </a>
-            <a class="aw" href="#">
+            <a id="about-modal-link2" class="aw">
                 <div class="center-block-col">
                     <i class="far fa-user fa-lg mb-2"></i>About
                 </div>
@@ -184,11 +177,9 @@
                 </div>
             </a>
         </div>
-
-
-        </div>
+        
     </footer>
-
+<script src="./assets/js/modal.js"></script>
 </body>
 
 </html>
