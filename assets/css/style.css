@@ -380,7 +380,7 @@ p {
 
 /* Modal  */
 .modal {
-    /* display: none; */
+    display: none;
     position: fixed;
     z-index: 100;
     left: 0;
@@ -390,19 +390,29 @@ p {
     overflow: auto;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background: rgb(99, 205, 215);
+    background: linear-gradient(305deg, rgba(99, 205, 215, 1) 0%,
+            rgba(199, 239, 241, 1) 32%, rgba(145, 199, 238, 1) 69%,
+            rgba(3, 13, 255, 1) 100%);
     margin: 15% auto;
     max-width: 50rem;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
-    /* Could be more or less, depending on screen size */
+    /*Couldbemoreorless,dependingonscreensize*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     animation-name: animatetop;
-    animation-duration: 500ms
+    animation-duration: 500ms;
+    border-radius: 5px;
+    -webkit-order-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 /* Add Animation */
@@ -420,37 +430,26 @@ p {
 
 .modal-container {
     display: flex;
-
+    border-radius: 2%;
+    -webkit-border-radius: 2%;
+    -moz-border-radius: 2%;
+    -ms-border-radius: 2%;
+    -o-border-radius: 2%;
 }
 
 .modal-image {
     background-image: url(../images/me.jpg);
     background-size: cover;
-    min-width: 227px;
-    max-width: 250px;
-    height: 300px;
+    min-width: 200px;
+    max-height: 266px;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
 
-.skills-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: start;
-    flex: 1 0 250px;
-    padding: 10px;
-}
 
-.front {
-    flex: 0 0 250px;
-    padding: 10px;
-
-}
-
-.back {
-    flex: 0 0 250px;
-    padding: 10px;
-
-}
 
 .progress-container {
     display: flex;
@@ -460,7 +459,7 @@ p {
 }
 
 .wrapper {
-    width: 300px;
+    width: 100%;
 }
 
 .progress-bar {
@@ -474,7 +473,10 @@ p {
 .progress-bar-fill-html {
     display: block;
     height: 22px;
-    background-color: #f36d0a;
+    background: rgb(243, 109, 10);
+    background: linear-gradient(135deg, rgba(243, 109, 10, 1) 0%,
+            rgba(251, 251, 233, 1) 21%, rgba(243, 109, 10, 1) 46%,
+            rgba(245, 245, 230, 1) 72%, rgba(243, 109, 10, 1) 100%);
     border-radius: 3px;
     transition: width 500ms ease-in-out;
 }
@@ -482,7 +484,9 @@ p {
 .progress-bar-fill-css {
     display: block;
     height: 22px;
-    background-color: var(--blue);
+    background: rgb(3, 13, 255);
+    background: linear-gradient(135deg, rgba(3, 13, 255, 1) 0%, rgba(251, 251, 233, 1) 21%,
+            rgba(3, 13, 255, 1) 46%, rgba(245, 245, 230, 1) 72%, rgba(3, 13, 255, 1) 100%);
     border-radius: 3px;
     transition: width 500ms ease-in-out;
 }
@@ -490,7 +494,10 @@ p {
 .progress-bar-fill-js {
     display: block;
     height: 22px;
-    background-color: #f3ef0a;
+    background: rgb(243, 239, 10);
+    background: linear-gradient(135deg, rgba(243, 239, 10, 1) 0%,
+            rgba(251, 251, 233, 1) 21%, rgba(243, 239, 10, 1) 46%,
+            rgba(245, 245, 230, 1) 72%, rgba(243, 239, 10, 1) 100%);
     border-radius: 3px;
     transition: width 500ms ease-in-out;
 }
@@ -498,7 +505,10 @@ p {
 .progress-bar-fill-py {
     display: block;
     height: 22px;
-    background-color: #1abe14;
+    background: rgb(26, 190, 20);
+    background: linear-gradient(135deg, rgba(26, 190, 20, 1) 0%,
+            rgba(251, 251, 233, 1) 21%, rgba(26, 190, 20, 1) 46%,
+            rgba(245, 245, 230, 1) 72%, rgba(26, 190, 20, 1) 100%);
     border-radius: 3px;
     transition: width 500ms ease-in-out;
 }
@@ -506,7 +516,10 @@ p {
 .progress-bar-fill-s {
     display: block;
     height: 22px;
-    background-color: #09e1fd;
+    background: rgb(9, 225, 253);
+    background: linear-gradient(135deg, rgba(9, 225, 253, 1) 0%,
+            rgba(251, 251, 233, 1) 21%, rgba(9, 225, 253, 1) 46%,
+            rgba(245, 245, 230, 1) 72%, rgba(9, 225, 253, 1) 100%);
     border-radius: 3px;
     transition: width 500ms ease-in-out;
 }
@@ -525,7 +538,7 @@ p {
 
 /* The Close Button */
 .close {
-    color: #aaa;
+    color: rgb(10, 10, 10);
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -741,25 +754,43 @@ p {
 }
 
 .button {
-    background-color: var(--blue);
-    border: 1px solid var(--bg-b);
-    color: white;
-    padding: 15px 85px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    color: rgb(255, 255, 255);
     font-size: 16px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    line-height: 16px;
+    padding: 15px;
+    border-radius: 3px;
+    font-family: var(--aw);
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    background-image: linear-gradient(135deg, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%);
+    box-shadow: rgba(0, 0, 0, 0.3) -11px 15px 30px 0px;
+    border: 2px solid rgb(28, 110, 164);
+    display: inline-block;
+}
+
+.button:hover {
+    background: #1C6EA4;
+}
+
+.button:active {
+    background: #144E75;
+}
+
+.button:hover {
+    background: #1C6EA4;
+}
+
+.button:active {
+    background: #144E75;
 }
 
 .icons {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.3) -11px 15px 30px 0px;
 
 
 }
