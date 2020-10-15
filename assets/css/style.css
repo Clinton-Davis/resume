@@ -31,10 +31,12 @@ body {
     --dblue: #003d57;
     --pd1: #005f89;
     --pd2: #0093b7;
+    --pd2_5: rgb(35, 136, 203);
     --pd3: #a0c5cf;
     --pd4: #63cdd7;
     --pd4_5: #aacfd3;
     --pd5: #e6eceb;
+    --wht: #ffffff;
 
 }
 
@@ -195,9 +197,10 @@ p {
 }
 
 .nav-links a {
-    color: var(--txt-wht);
+    color: var(--blue_5);
     text-decoration: none;
     letter-spacing: 3px;
+    font-size: 1.125em;
 }
 
 .nav-links li {
@@ -218,7 +221,7 @@ p {
 .nav-links-btm a {
     color: var(--txt-wht);
     text-decoration: none;
-    letter-spacing: 3px;
+
 }
 
 .nav-links-btm li {
@@ -291,7 +294,7 @@ p {
 
 .hero span {
     font-size: 5rem;
-    color: var(--pd5);
+    color: white;
 }
 
 .container .box.shadow5:before {
@@ -525,17 +528,6 @@ p {
 }
 
 
-
-/* .html {
-    background-color: #f1a165;
-    background-image: linear-gradient(to bottom, #f1a165, #f36d0a);
-} */
-
-.red {
-    background-color: #f0a3a3;
-    background-image: linear-gradient(to bottom, #f0a3a3, #f42323);
-}
-
 /* The Close Button */
 .close {
     color: rgb(10, 10, 10);
@@ -566,7 +558,7 @@ p {
 
 .pro-heading {
     margin-bottom: 40px;
-    color: var(--pd1);
+    color: var(--pd2_5);
     font-size: 5rem;
     transform: skewY(0deg);
     -webkit-transform: skewY(0deg);
@@ -670,8 +662,8 @@ p {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 400px;
-    background: linear-gradient(transparent, transparent, rgba(0, 37, 246, 0.1));
+    height: 45px;
+    background: linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.4));
     transform-origin: bottom;
     transform: skewX(45deg);
     transition: 0.5s;
@@ -750,7 +742,7 @@ p {
 .contact-heading {
     font-size: 5rem;
     padding: 2rem;
-    color: var(--pd1);
+    color: var(--pd2_5);
 }
 
 .button {
@@ -787,12 +779,14 @@ p {
     background: #144E75;
 }
 
+#contact-send {
+    width: 100%;
+}
+
 .icons {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     box-shadow: rgba(0, 0, 0, 0.3) -11px 15px 30px 0px;
-
-
 }
 
 @media (max-width: 400px) {
@@ -804,6 +798,16 @@ p {
         font-size: 2.5rem;
         left: 166px
     }
+
+    .contact-heading {
+        font-size: 4rem;
+    }
+
+    .pro-heading {
+
+        font-size: 4rem;
+    }
+
 }
 
 /* Nav Bar media  */
