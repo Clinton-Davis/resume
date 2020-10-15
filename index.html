@@ -8,6 +8,14 @@
     <meta name="Description" content="Enter your description here" />
     <script src="https://kit.fontawesome.com/092992acac.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_8kWmsIvOjmHcCs7cRI6uz");
+        })();
+        </script>
     <title>Clinton Davis</title>
 </head>
 
@@ -40,6 +48,7 @@
                 </h2>
                 <h2 class="text-dblue">Im Clinton Davis, and I'm a <br>
                     Full Stack Web Developer. </h2>
+             
                 <br>
             </div>
             <div class="blocks flex">
@@ -65,6 +74,7 @@
                     <span class="close">&times;</span>
                     <div class="about-container">
                         <h3 class="sub-heading aw mx-2 mb-2">Hi I'm Clint</h3>
+                       
                         <p class="rbo mx-2 mb-2">I create and build websites to communicate a good feeling, 
                             and that shall invite the user back. I believe the website can look beautiful and work correctly. 
                             Figma, HTML, CSS, JavaScript are tools I use to design and build the front-end. 
@@ -80,7 +90,7 @@
                             <div class="wrapper">
                                 <h5>HTML / HTML5</h5>
                                 <div class="progress-bar">
-                                    <span class="progress-bar-fill-html" style="width: 80%;"></span>
+                                    <span class="progress-bar-fill-html" style="width: 92%;"></span>
                                 </div>
                             </div>
                             <div class="wrapper">
@@ -98,7 +108,7 @@
                             <div class="wrapper">
                                 <h5>Django / Phyton</h5>
                                 <div class="progress-bar ">
-                                    <span class="progress-bar-fill-py" style="width: 80%;"></span>
+                                    <span class="progress-bar-fill-py" style="width: 84%;"></span>
                                 </div>
                             </div>
                             <div class="wrapper">
@@ -185,14 +195,14 @@
         <div class="contact-container center-block-col ">
             <h2 class="aw text-center txt-shadow contact-heading">Contact</h2>
             <h4 class="aw text-center  pb-2">If you would like to contact me <br>please feel free to send me a message.</h4>
-            <form class="aw pb-4 ">
+            <form onsubmit="return sendMail(this);" id="contactForm" class="aw pb-4 ">
                 <label for="name">Your name:</label><br>
-                <input class="form-control" type="text" id="name" name="name"><br>
+                <input class="form-control" type="text" id="from_name" name="from_name" required><br>
                 <label for="email">Email:</label><br>
-                <input class="form-control" type="text" id="email" name="email"><br>
+                <input class="form-control" type="text" id="emailaddress" name="emailaddress" required><br>
                 <label for="message">Message:</label><br>
                 <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
-                <button class="button aw" type="submit">Send Message</button>
+                <button id="contact-send" class="button aw" type="submit" required>Send Message</button>
             </form>
         </div>
         <div class="center-block">
@@ -228,6 +238,7 @@
         
     </footer>
 <script src="./assets/js/modal.js"></script>
+<script src="./assets/js/email.js"></script>
 </body>
 
 </html>
