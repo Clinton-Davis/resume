@@ -289,16 +289,20 @@ p {
 
 .home {
     position: relative;
-    top: 2px;
+    top: 60px;
     margin-bottom: 200px;
 }
 
 .hero span {
     font-size: 5rem;
     color: white;
+    display: inline-block;
+    
 }
-
-.container .box.shadow5:before {
+.subHeading span {
+    display: inline-block;
+}
+.container .shadow5:before {
     content: '';
     position: absolute;
     bottom: -15%;
@@ -453,13 +457,10 @@ p {
     -o-border-radius: 5%;
 }
 
-
-
 .progress-container {
     display: flex;
     flex-direction: column;
     padding: 10px;
-
 }
 
 .wrapper {
@@ -571,7 +572,7 @@ p {
 .products-container {
     display: flex;
     position: relative;
-    max-width: 899px;
+    /* max-width: 899px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -580,7 +581,10 @@ p {
     -moz-transform: skewY(-5deg);
     -ms-transform: skewY(-5deg);
     -o-transform: skewY(-5deg);
+    transition: 0.5s;
 }
+
+
 
 .products-container .card {
     position: relative;
@@ -692,10 +696,10 @@ p {
 
 .info-border {
     position: relative;
-    color: #050505;
+    color: rgb(0, 0, 0);
     border-left: 1px solid;
-
 }
+
 
 .info-item1::after {
     width: 12px;
@@ -703,21 +707,21 @@ p {
     display: block;
     top: 1.5em;
     position: absolute;
-    left: -6px;
+    left: 0px;
     border-radius: 12px;
     content: "";
     background: var(--dblue);
 }
 
 .info-item2::after {
+    content: "";
+    position: absolute;
     width: 12px;
     height: 12px;
     display: block;
     top: 3.8em;
-    position: absolute;
-    left: -6px;
+    left: 0px;
     border-radius: 12px;
-    content: "";
     background: var(--dblue);
 }
 
@@ -727,7 +731,7 @@ p {
     display: block;
     top: 6em;
     position: absolute;
-    left: -6px;
+    left: 0px;
     border-radius: 12px;
     content: "";
     background: var(--dblue);
@@ -790,6 +794,10 @@ p {
     box-shadow: rgba(0, 0, 0, 0.3) -11px 15px 30px 0px;
 }
 
+#message {
+    width: 100%;
+}
+
 @media (max-width: 400px) {
     .logo-name {
         font-size: 2.5rem;
@@ -805,8 +813,7 @@ p {
     }
 
     .pro-heading {
-
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
 }
