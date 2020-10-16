@@ -325,8 +325,7 @@ p {
 
 .hero span {
     font-size: 5rem;
-    display: inline-block;
-    
+    display: inline-block; 
 }
 .subHeading span {
     display: inline-block;
