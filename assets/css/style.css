@@ -184,6 +184,36 @@ p {
     background-color: var(--blue);
 }
 
+.ripple-surface {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ripple-surface span {
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    animation: ripple 1500ms;
+    opacity: 0;
+  }
+  
+  @keyframes ripple {
+    from {
+      opacity: 1;
+      transform: scale(0);
+    }
+  
+    to {
+      opacity: 0;
+      transform: scale(10);
+    }
+  }
+  
 /* Nav Bar */
 .nav-a {
     color: var(--txt-wht);
@@ -198,7 +228,7 @@ p {
 }
 
 .nav-links a {
-    color: var(--blue_5);
+    color: var(--dblue);
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 1.125em;
@@ -206,7 +236,7 @@ p {
 
 .nav-links li {
     list-style: none;
-    color: var(--blue);
+    color: var(--dblue);
     text-shadow: 1px -1px var(--txt-wht);
 
 }
@@ -239,7 +269,7 @@ p {
 
 .logo-bg {
     position: absolute;
-    background-color: var(--blue);
+    background-color: var(--dblue);
     top: 10px;
     left: 10px;
     width: 150px;
@@ -255,7 +285,7 @@ p {
     top: 20px;
     left: 25px;
     z-index: 11;
-    text-shadow: 1px -1px var(--blue);
+    text-shadow: 1px -1px var(--dblue);
 }
 
 .txtshd-b {
@@ -264,7 +294,7 @@ p {
 
 .logo-last {
     position: absolute;
-    color: var(--blue);
+    color: var(--dblue);
     font-size: 3rem;
     top: 3px;
     left: 200px;
@@ -274,7 +304,7 @@ p {
 
 
 .mobile-logo {
-    background-color: var(--bg-b);
+    background-color: var(--dblue);
     position: absolute;
     top: 0px;
     left: 0;
@@ -295,7 +325,6 @@ p {
 
 .hero span {
     font-size: 5rem;
-    color: white;
     display: inline-block;
     
 }
@@ -316,7 +345,7 @@ p {
 
 .hero-p {
     font-size: 1.125rem;
-    background-color: rgba(230, 236, 235, 0.8);
+    background-color: var(--dblue);
 }
 
 .flex {
@@ -478,6 +507,7 @@ p {
 .progress-bar-fill-html {
     display: block;
     height: 22px;
+    /* width: 92%; */
     background: rgb(243, 109, 10);
     background: linear-gradient(135deg, rgba(243, 109, 10, 1) 0%,
             rgba(251, 251, 233, 1) 21%, rgba(243, 109, 10, 1) 46%,
