@@ -71,7 +71,7 @@ p {
 
 .form-control {
     height: 30px;
-    width: 300px;
+    width: 100%;
 }
 
 .text-center {
