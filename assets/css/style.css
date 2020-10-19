@@ -297,7 +297,7 @@ p {
     color: var(--dblue);
     font-size: 3rem;
     top: 3px;
-    left: 200px;
+    left: 109px;
     z-index: 11;
     text-shadow: 1px -1px white;
 }
@@ -829,13 +829,9 @@ p {
 
 @media (max-width: 400px) {
     .logo-name {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
-    .logo-last {
-        font-size: 2.5rem;
-        left: 166px
-    }
 
     .contact-heading {
         font-size: 4rem;
