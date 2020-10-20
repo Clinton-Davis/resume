@@ -74,7 +74,8 @@
             <div class="blocks flex">
                 <div class="headinInfo">
                     <div class="card-w hero-p shadow5">
-                        <p class="info rbo text-center">With diverse life experience and technical skills, I follow form
+                        <p id="intro" class="info rbo text-center">With diverse life experience and technical skills, I
+                            follow form
                             as well as function. The effective design, combined with application speed, security and
                             reliability, creates a user experience that keeps them coming back. I work quickly and
                             effectively in getting things built and working across the Full Stack. I'm an excellent
@@ -159,70 +160,59 @@
     <!-- Projects section  -->
     <section id="projects">
         <h2 class="text-center aw txt-shadow pro-heading">Projects</h2>
-        <div class="products-container mx">
-            <div class="card mx">
-                <div class="imgbx">
-                    <img src="./assets/images/smartmockups_focus-fitness.png">
-                </div>
-                <a href="https://focus-fitness.herokuapp.com/" target="_black">
-                    <div class="info-container info-border">
-                        <div class="content ">
-                            <h4 class="aw mb-2 info-item1">Focus Fitness</h4>
-                            <p class="rbo-4 mb-2 info-item2">2020 | Python | Django | Postgres</p>
-                            <p class="rbo info-item3"><span class="rbo-4">Project |</span> Code Institute.<br>
-                                A fictional, Subscription based fitness website with a full e-commerce shop and user
-                                blog.<br><br></p>
-                        </div>
-                    </div>
+        <div class="project-container">
+            <div id="focus" class="mx">
+                <a class="order1" href="https://focus-fitness.herokuapp.com/" target="_black">
+                    <img class="project-img" src="./assets/images/smartmockups_focus-fitness.png">
                 </a>
-            </div>
-            <div class="card mx">
-                <div class="imgbx">
-                    <img src="./assets/images/smartmockups_chow.png">
+                <div class="content order2">
+                    <h4 class="aw mb-2 info-item1">Focus Fitness</h4>
+                    <p class="rbo-4 mb-2 info-item2">2020 | Python | Django | PostgreSQL</p>
+                    <p class="rbo-4 mb-2 info-item2">Project | Code Institute</p>
+                    <p class="rbo info-item3"><span class="rbo-4"></span> <br>
+                        A fictional, Subscription based fitness website with a full e-commerce shop and user
+                        blog.<br><br></p>
                 </div>
-                <a href="https://chow-flask-mongodb.herokuapp.com/" target="_black">
-                    <div class="info-container info-border">
-                        <div class="content ">
-                            <h4 class="aw mb-2 info-item1">Chow</h4>
-                            <p class="rbo-4 mb-2 info-item2">2019 | Python | Flask | MongoDB</p>
-                            <p class="rbo info-item3"><span class="rbo-4 ">Project |</span>| Code Institute.<br>
-                                A fictional, Online cookbook, promoting a brand.<br><br></p>
-                        </div>
-                    </div>
-                </a>
             </div>
-            <div class="card mx">
-                <div class="imgbx">
-                    <img src="./assets/images/smartmockups_ballet.png">
+            <div id="chow" class="mx">
+                <a class="order2" href="https://chow-flask-mongodb.herokuapp.com/">
+                    <img class="project-img" src="./assets/images/smartmockups_chow.png">
+                </a>
+                <div class="content order1">
+                    <h4 class="aw mb-2 info-item1">Chow</h4>
+                    <p class="rbo-4 mb-2 info-item2">2019 | Python | Flask | MongoDB</p>
+                    <p class="rbo-4 mb-2 info-item2">Project | Code Institute</p>
+                    <p class="rbo info-item3">
+                        A Online cookbook, promoting a brand, This is a funtioning web app that lets users add, delete,
+                        or edit there recieps as they please.<br><br></p>
                 </div>
-                <a href="https://www.southpeninsulaballet.com/" target="_black">
-                    <div class="info-container info-border">
-                        <div class="content bp-2">
-                            <h4 class="aw mb-2 info-item1">Peninsula Ballet</h4>
-                            <p class="rbo-4 mb-2 info-item2"> 2019 | JavaScript</p>
-                            <p class="rbo info-item3"><span class="rbo-4">Project |</span> Peninsula Ballet
-                                <br>Peninsula Ballet is a ballet studio webpage.
-                                This webpage is live and mantained.<br><br></p>
-                        </div>
-                    </div>
-                </a>
             </div>
-            <div class="card mx">
-                <div class="imgbx">
-                    <img src="./assets/images/smartmockups_bestbits.png">
+
+            <div id="ballet" class="mx">
+                <a class="order1" href="https://www.southpeninsulaballet.com/" target="_black">
+                    <img class="project-img" src="./assets/images/smartmockups_ballet.png">
+                </a>
+                <div class="content order2">
+                    <h4 class="aw mb-2 info-item1">Peninsula Ballet</h4>
+                    <p class="rbo-4 mb-2 info-item2"> 2019 | JavaScript</p>
+                    <p class="rbo info-item3"><span class="rbo-4">Project |</span> Peninsula Ballet
+                        <br>Peninsula Ballet is a ballet studio webpage.
+                        This webpage is live and mantained.<br><br></p>
                 </div>
-                <a href="https://musing-tesla-381a66.netlify.app/">
-                    <div class="info-container info-border">
-                        <div class="content">
-                            <h4 class="aw mb-2 info-item1">Cape Towns Best Bits</h4>
-                            <p class="rbo-4 mb-2 info-item2">2019 | JavaScript | JQuery</p>
-                            <p class="rbo info-item3"><span class="rbo-4">Project |</span> Code Institute<br></p>
-                            <p class="rbo">A Cape Town do it your self tourism webpage with Google Maps API and weather
-                                intergration.<br><br></p>
-                        </div>
-                    </div>
-                </a>
             </div>
+            <div id="bestbits" class="mx">
+                <a class="order2" href="https://musing-tesla-381a66.netlify.app/">
+                    <img class="project-img" src="./assets/images/smartmockups_bestbits.png">
+                </a>
+                <div class="content order1">
+                    <h4 class="aw mb-2 info-item1">Cape Towns Best Bits</h4>
+                    <p class="rbo-4 mb-2 info-item2">2019 | JavaScript | JQuery</p>
+                    <p class="rbo info-item3"><span class="rbo-4">Project |</span> Code Institute<br></p>
+                    <p class="rbo">A Cape Town do it your self tourism webpage with Google Maps API and weather
+                        intergration.<br><br></p>
+                </div>
+            </div>
+
         </div>
     </section>
     <!-- Contact section -->
