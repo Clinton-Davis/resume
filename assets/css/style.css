@@ -136,6 +136,9 @@ p {
     margin-bottom: 2rem;
 }
 
+.hr {
+    width: 50%;
+}
 .center-block-col {
     display: flex;
     flex-direction: column;
@@ -611,6 +614,7 @@ p {
     grid-template-columns: 1fr;
     column-gap: 20px;
     row-gap: 50px;
+ 
 }
 .project-img {
     max-width: 35rem;
