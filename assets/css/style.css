@@ -444,10 +444,11 @@ p {
 }
 
 .modal-content {
-    background: rgb(99, 205, 215);
+    /* background: rgb(99, 205, 215);
     background: linear-gradient(305deg, rgba(99, 205, 215, 1) 0%,
             rgba(199, 239, 241, 1) 32%, rgba(145, 199, 238, 1) 69%,
-            rgba(3, 13, 255, 1) 100%);
+            rgba(3, 13, 255, 1) 100%); */
+    background-image: url(../images/bigback.png);
     margin: 15% auto;
     max-width: 50rem;
     padding: 20px;
@@ -480,13 +481,18 @@ p {
 
 .modal-container {
     display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  
+}
+.profile-img {
+    max-height: 10rem;
     border-radius: 2%;
     -webkit-border-radius: 2%;
     -moz-border-radius: 2%;
     -ms-border-radius: 2%;
     -o-border-radius: 2%;
 }
-
 .modal-image {
     background-image: url(../images/me.jpg);
     background-size: cover;
