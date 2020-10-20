@@ -291,8 +291,6 @@ p {
     font-family: var(--aw);
     color: var(--txt-wht);
     font-size: 3rem;
-    top: 20px;
-    left: 25px;
     z-index: 11;
     text-shadow: 1px -1px var(--dblue);
 }
@@ -713,17 +711,7 @@ p {
 #message {
     width: 100%;
 }
-@media (max-width: 933px) {
-    .order1 {
-        order: 1;
-    }
-    .order2 {
-        order: 1;
-    }
-    .content {
-        max-width: 70%;
-    }
-}
+
 
 @media (min-width: 768px) {
     #top_nav {
@@ -740,39 +728,17 @@ p {
     }
 }
 
-@media (max-width: 600px) {
-    .project-img {
-        width: 25rem;
+@media (max-width: 933px) {
+    .order1 {
+        order: 1;
+    }
+    .order2 {
+        order: 1;
     }
     .content {
-        max-width: 95%;
+        max-width: 70%;
     }
 }
-
-/* Nav Bar media  */
-
-@media (max-width: 500px) {
-    .project-img {
-        width: 20rem;
-    }
-    .content {
-        max-width: 95%;
-    }
-}
-
-@media (max-width: 400px) {
-    .logo-name {
-        font-size: 2.3rem;
-    }
-    .contact-heading {
-        font-size: 4rem;
-    }
-    .pro-heading {
-        font-size: 3.5rem;
-    }
-}
-
-
 @media (max-width: 767px) {
     #btm-nav {
         display: flex;
@@ -788,5 +754,31 @@ p {
     }
     .content {
         max-width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-img {
+        width: 25rem;
+    }
+    .content {
+        max-width: 95%;
+    }
+}
+@media (max-width: 500px) {
+    .project-img {
+        width: 20rem;
+    }
+    .content {
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 400px) {
+    .contact-heading {
+        font-size: 4rem;
+    }
+    .pro-heading {
+        font-size: 3.5rem;
     }
 }
