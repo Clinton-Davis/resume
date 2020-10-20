@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Audiowide|Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700");
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;800&family=Roboto&display=swap');
 /* Genural */
 * {
     margin: 0px;
@@ -18,7 +17,7 @@ body {
 }
 
 :root {
-    --aw: "Audiowide", sans-serif;
+    --aw: "Prompt", sans-serif;
     --rbo: "Roboto", sans-serif;
     --bg-b: rgb(30, 30, 30);
     --bg-lgy: rgb(211, 211, 211);
@@ -154,6 +153,18 @@ p {
 
 .aw {
     font-family: var(--aw);
+}
+.fw4 {
+    font-weight: 400;
+}
+.fw6 {
+    font-weight: 600;
+}
+.fw7 {
+    font-weight: 700;
+}
+.fw8 {
+    font-weight: 800;
 }
 
 .rbo {
@@ -316,6 +327,10 @@ p {
     position: relative;
     top: 60px;
     margin-bottom: 200px;
+}
+
+.big {
+    font-weight: 600;
 }
 
 #intro {
