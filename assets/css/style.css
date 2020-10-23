@@ -772,6 +772,9 @@ p {
     .content {
         max-width: 95%;
     }
+    #backToTop {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
