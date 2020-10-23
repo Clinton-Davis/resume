@@ -194,6 +194,14 @@ p {
 .the-blue {
     background-color: var(--blue);
 }
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    opacity: 0;
+}
+
 
 .ripple-surface {
     display: inline-block;
@@ -224,8 +232,11 @@ p {
       transform: scale(10);
     }
   }
+
+
   
 /* Nav Bar */
+
 .nav-a {
     color: var(--txt-wht);
     text-decoration: none;
