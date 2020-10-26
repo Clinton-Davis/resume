@@ -2,8 +2,12 @@
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 tl.fromTo(".big", { opacity: 0 }, { opacity: 1, duration: 0.5, rotation: 360, stagger: 0.15 }, "+=2");
-tl.fromTo(".sub-h", { x: "-100000%" }, { x: "0%", duration: 0.5, rotation: 360, stagger: 0.05 });
+tl.fromTo(".left", { x: "-100000%" }, { x: "0%", duration: 0.5, rotation: 360, stagger: 0.05 });
 tl.fromTo(".right", { x: "100000%" }, { x: "0%", duration: 0.5, rotation: 360, stagger: 0.05 });
+tl.fromTo(".left2", { x: "-100000%" }, { x: "0%", duration: 0.5, rotation: 360, stagger: 0.05 });
+tl.fromTo(".fade", { opacity: 0 }, { opacity: 1, duration: 0.75, stagger: 0.1 });
+
+
 tl.fromTo(".headinInfo", { opacity: "0" }, { opacity: "1", duration: 1 });
 tl.fromTo("#top-nav", { y: "-1000%" }, { y: "0%", duration: 1.3 }, "-=1.5");
 tl.fromTo(".img", { y: "-1000%" }, { y: "0%", duration: 1.3 }, "-=1.5");

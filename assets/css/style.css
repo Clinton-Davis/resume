@@ -337,7 +337,7 @@ p {
 
 .home {
     position: relative;
-    top: 60px;
+    top: 55px;
     margin-bottom: 200px;
 }
 
@@ -764,7 +764,7 @@ p {
         width: 100%;
     }
     .home {
-        top: 100px;
+        top: 55px;
     }
     .project-img {
         width: 30rem;
