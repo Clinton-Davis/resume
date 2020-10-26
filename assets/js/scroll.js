@@ -5,10 +5,10 @@ function animateFrom(elem, direction) {
     y = direction * 100;
   if (elem.classList.contains("gs_reveal_fromLeft")) {
     x = -200;
-    y = 0;
+    y = 100;
   } else if (elem.classList.contains("gs_reveal_fromRight")) {
     x = 200;
-    y = 0;
+    y = 100;
   }
   gsap.fromTo(
     elem,
