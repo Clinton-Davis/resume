@@ -1,16 +1,14 @@
-# Cape Towns Best Bits
-
-## Interactive Frontend Development - Code institute
+# Clinton Davis - Portfolio
 
 ---
 
-> **_Cape Towns Best Bits_** is a _Do It Your Self_ webpage that streamlines the process of finding listed destinations and things to do in Cape Town without having to go through a tour company.
+>
 
 ---
 
 ## Demo
 
-A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
+A live demo can found **_[Here](https://www.clintondavis.org/)_**
 
 ---
 
@@ -55,12 +53,6 @@ A live demo can found **_[Here](https://musing-tesla-381a66.netlify.com)_**
 ---
 
 ## Testing
-
-- I used [GTmetrix](https://gtmetrix.com) to test how fast the site loaded [Report](https://github.com/Clinton-Davis/CapeTowns_Best_Bits/blob/master/sundries/GTmetrix-report-.pdf)<br>
-
-- I sent it to the Slack Comunity for Feedback.
-- Then I started the Media Query Test and all the Presets in Chrome and Firefox Development tools.
-- Below is a list of devices I tested on with [Website Responsive Testing] (Toolresponsivetesttool.com).
 
 ---
 
